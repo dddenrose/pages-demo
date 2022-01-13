@@ -1,0 +1,125 @@
+@import 'basic.scss';
+
+.service {
+	#header {
+		position: absolute;
+		width: 100%;
+	}
+
+
+	#content{		
+		.header {
+			background-image: url(https://dummyimage.com/1920x1080/dddddd/eeeeee);
+			&.black{
+				.container{
+					.title, #breadcrumbs li {
+						color:black;
+					}
+				}				
+			}
+		}
+
+		.special-services{
+			padding: 100px 0;
+			.container {
+				margin-top: 0;
+			}
+			.title {			
+				margin-bottom: 5px;
+				font-size: 16px;
+				color: $branding-color;
+			}
+			.subtitle {
+				margin: 0;
+				font-size: 18px;
+				font-weight: normal;
+				text-transform: uppercase;
+			}		
+			ul {
+				padding-left: 0;
+			}	
+			p {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.services {
+		padding: 100px 0;
+		.row {
+			> div {
+				box-sizing: border-box;
+				padding: 50px;
+				&:hover {
+					background: black;
+					color: white;
+					i {
+						color: $branding-color;
+					}
+				}
+			}
+		}	
+	}
+
+	.feature {
+		padding: 100px 0;
+		background:$gray-bg-color;
+		.row {
+			margin-top: 100px;
+		}
+		.center {
+			text-align: center;
+		}
+	}
+
+	
+	.special-offer{
+		background: $gray-bg-color;
+		padding: 60px 0;
+		margin-top: 100px;
+		.title {
+			font-size: 18px;
+			margin-bottom: 10px;
+			em {
+				color: $branding-color;
+				font-style: normal;			
+			}
+		}
+		
+		.container {
+			margin-top: 0;
+		}
+		.promo-info {
+			float: left;
+		}
+		.button {
+			float: right;
+			margin: 0;
+		}
+		.desc {
+			color: $gray-text;
+		}
+	}
+	
+	#footer {
+		margin-top: 0;
+	}
+
+	.big-dot {
+		li {
+			float: left;
+			list-style-type: none;
+			width: 50%;
+			line-height: 1.5;
+			&::before {
+				content:"○";
+				color: #757575;
+				padding-right: 10px;
+			}
+		}
+	}
+
+	
+
+}
+
